@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form  Project</title>
+    <style>
+      textarea, input, option, optgroup, button{
+        color: #666;
+      }
+    </style>
+</head>
+<body style="font-family: 'Courier New', Courier, monospace; background-color: darkslategrey; color: #aaa; padding: 1.5% 25%;">
+    <h1>Registration form</h1>
+
+    <form action="">
+      <legend><span style="text-decoration: underline; font-weight: 600; font-size: large; font-family: 'Courier New', Courier, monospace;">My Form</span></legend><br>
+      <label for="name">Name*:</label>
+      <input type="text" name="name" id="name" required>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email"><br><br>
+      <label for="pwd">Password*:</label>
+      <input type="password" name="pwd" id="pwd" required><hr>
+      <label for="phn">Phone no.:</label>
+      <input type="number" name="phn" id="phn"><br><br>
+      <label for="dob">Date Of Birth:</label>
+      <input type="date" name="dob" id="dob"><br><br>
+      <label for="sign">Signature*:</label>
+      <input type="file" name="sign" id="sign" required><br><br>
+      <label for="color">Choose a color:</label>
+      <input type="color" name="color" id="color"><br><br><hr>
+      <label for="time">Select the time:</label>
+      <input type="time" name="time" id="time"><br><br>
+      <label for="week">Select the week:</label>
+      <input type="week" name="week" id="week"><br><br>
+      <label for="datetime">Select date and time:</label>
+      <input type="datetime-local" name="datetime" id="datetime"><br><br>
+      <label for="url">Paste your url here:</label>
+      <input type="url" name="url" id="url"><br><br><br>
+      <fieldset>
+        <label>Select your gender*:</label>
+        <input type="radio" name="gender" value="male" id="male" checked>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="fmale" id="fmale">
+        <label for="fmale">Female</label>
+        <input type="radio" name="gender" value="other" id="other">
+        <label for="other">Others</label><br><br>
+      </fieldset>
+
+      <p><strong>Skills: </strong></p>
+      <input type="checkbox" name="ui" id="html">
+      <label for="html">Html</label><br>
+      <input type="checkbox" name="ui" id="css">
+      <label for="css">Css</label><br>
+      <input type="checkbox" name="ui" id="js">
+      <label for="js">Js</label><br><br>
+
+      <label for="state">Select your state:</label>
+      <select name="state" id="state">
+        <option value="ap">AP</option>
+        <option value="ts">TS</option>
+        <option value="ks">KS</option>
+        <option value="mh">MH</option>
+        <option value="up">UP</option>
+      </select><br><br>
+
+      <label for="vehicles">Select your vehicle:</label>
+      <select name="vehicle" id="vehicles">
+        <optgroup label="bikes">
+          <option value="blt">Bullet</option>
+          <option value="hnd">Hero honda</option>
+          <option value="plsr">Pulsar</option>
+        </optgroup>
+        <optgroup label="cars">
+          <option value="mrt">Maruti</option>
+          <option value="tata">Tata</option>
+          <option value="ad">Audi</option>
+        </optgroup>
+        <optgroup label="Others">
+          <option value="cyle">Bi-cycle</option>
+          <option value="blkrt">Bullokart</option>
+        </optgroup>
+      </select><br><br>
+      <label for="msg">Message:</label>
+      <textarea name="msg" id="msg" cols="30" rows="10">Enter your message here...</textarea>
+      <hr>
+
+      
+      <button type="submit">Register</button>
+      <input type="submit" value="inside">
+      <input type="reset" value="reset">
+    </form>
+    <hr><hr>
+</body>
+</html>
