@@ -1,12 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Css Practice</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job application</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container"> 
+     <div class="sub-container">
+      <h1>Job Application <span class="tiny-title">(Web)</span></h1>
+      <form action="">
+        <div class="form-container">
+          <div class="form-control">
+            <input type="text" name="fName" id="fName" placeholder="Enter your first name...">
+          </div>
+          
+          <div class="form-control">
+            <input type="text" name="lName" id="lName" placeholder="Enter your last name...">
+          </div>
+          
+          <div class="form-control">
+            <input type="email" name="email" id="email" placeholder="Enter your email id...">
+          </div>
+          
+          <div class="form-control">
+            <select name="jobrole" id="jobrole">
+              <option value=>Select a job role</option>
+              <option value="frontenddev">Front end developer</option>
+              <option value="backenddev">Backend developer</option>
+              <option value="fullstack">Fullstack developer</option>
+              <option value="gamedev">Game developer</option>
+              <option value="gamedes">Game designer</option>
+            </select>
+          </div>
+          
+          <div class="form-textarea">
+            <textarea name="add" id="add" rows="2" cols="63" placeholder="Enter your address..."></textarea>
+          </div>
+          
+          <div class="form-control">
+            <input type="text" name="city" id="city" placeholder="Enter your city...">
+          </div>
+          
+          <div class="form-control">
+            <input type="text" name="pincode" id="pincode" placeholder="Enter your area pincode...">
+          </div>
+          
+          <div class="form-control">
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date">
+          </div>
+          
+          <div class="form-control">
+            <label for="file">Choose your file</label>
+            <input type="file" name="file" id="file">
+          </div>
+        </div>
+
+        <div class="btn-container">
+          <button type="submit">Apply now</button>
+        </div>
+      </form>
+     </div> 
+    </div>
+  </body>
 </html>
