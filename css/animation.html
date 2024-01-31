@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      body{
+        background-color: #143;
+        color: #add8e6;
+      }
+      .animation-box1{
+        width: 50px;
+        height: 50px;
+        background-color: #056;
+          border-radius: 50%;
+        animation-name: sq2ball;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        margin-bottom: 5px;
+      }
+      @keyframes sq2ball {
+        0%{
+          transform: translateX(0);
+        }
+        25%{
+          background-color: #04819a;
+        }
+        50%{
+          transform: translateX(200px);
+          background-color: #08d6ff;
+        }
+        75%{
+          background-color: #add8e6;
+        }
+        100%{
+          transform: translateX(0);
+          background-color: #e4e5e5;
+        }
+      }
+      .box2-container{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+      .line{
+        width: 100%;
+        height: 1px;
+        position: fixed;
+        top: 650px;
+        left: 0;
+        background: #aaa;
+      }
+      .animation-box2{
+        display: inline-block;
+        width: 2px;
+        height: 2px;
+        border-radius: 50%;
+        background-color: #add6de;
+        animation-name: smallball;
+        animation-duration: 5s;
+        animation-timing-function: ease-out;
+        animation-iteration-count: 4;
+        animation-direction: normal;
+      }
+      @keyframes smallball {
+        0%{
+          transform: translateY(0);
+        }
+        10%{
+          background-color: #add8e6;
+        }
+        20%{
+          background-color: #08d6ff;
+        }
+        40%{
+          background-color: #add8e6;
+        }
+        50%{
+          transform: translateY(635px);
+          background-color: #e4e5e5;
+        }
+        60%{
+          transform: translateY(590px);
+        }
+        80%{
+          transform: translateY(634px);
+        }
+        95%{
+          transform: translateY(634px);
+        }
+        100%{
+          transform: translateY(634px);
+        }
+      }
+      .animation-box3{
+        display: inline-block;
+        width: 2px;
+        height: 2px;
+        border-radius: 50%;
+        background-color: #add6de;
+        animation-name: smallball2;
+        animation-duration: 5s;
+        animation-timing-function: ease-out;
+        animation-delay: 40ms;
+        animation-iteration-count: 4;
+        animation-direction: normal;
+      }
+      @keyframes smallball2 {
+        0%{
+          transform: translateY(0);
+        }
+        10%{
+          background-color: #add8e6;
+        }
+        20%{
+          background-color: #08d6ff;
+        }
+        40%{
+          background-color: #add8e6;
+        }
+        50%{
+          transform: translateY(635px);
+          background-color: #e4e5e5;
+        }
+        60%{
+          transform: translateY(590px);
+        }
+        80%{
+          transform: translateY(634px);
+        }
+        95%{
+          transform: translateY(634px);
+        }
+        100%{
+          transform: translateY(634px);
+        }
+      }
+      .animation-box4{
+        display: inline-block;
+        width: 2px;
+        height: 2px;
+        border-radius: 50%;
+        background-color: #add6de;
+        animation-name: smallball3;
+        animation-duration: 5s;
+        animation-timing-function: ease-out;
+        animation-delay: 20ms;
+        animation-iteration-count: 4;
+        animation-direction: normal;
+      }
+      @keyframes smallball3 {
+        0%{
+          transform: translateY(0);
+        }
+        10%{
+          background-color: #add8e6;
+        }
+        20%{
+          background-color: #08d6ff;
+        }
+        40%{
+          background-color: #add8e6;
+        }
+        50%{
+          transform: translateY(635px);
+          background-color: #e4e5e5;
+        }
+        60%{
+          transform: translateY(590px);
+        }
+        80%{
+          transform: translateY(634px);
+        }
+        95%{
+          transform: translateY(634px);
+        }
+        100%{
+          transform: translateY(634px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Animations</h1>
+    <h2>Animation proterties</h2>
+    <div class="animation-box1"></div>
+    <div class="box2-container">
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+      <div class="animation-box4"></div>
+      <div class="animation-box2"></div>
+      <div class="animation-box3"></div>
+    </div>
+    <div class="line"></div>
+  </body>
+</html>

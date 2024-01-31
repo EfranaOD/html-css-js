@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
+    <style>
+      body{
+        background-color: #ffd5e3;
+      }
+      .grid-container{
+        padding: 20px;
+        color: #acdaf7;
+        background-color: #124;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 100px);
+        gap: 10px;
+      }
+      .grid-item{
+        padding: 10px;
+        background-color: #168;
+        text-align: center;
+      }
+      .grid-contianer-areas{
+        padding: 25px;
+        color: #b9f8ee;
+        background-color: #003e35;
+        display: grid;
+        grid-template-areas: 
+          "header header header"
+          "left main right"
+          "footer footer footer";
+        gap: 10px;
+      }
+      .header{
+        grid-area: header;
+        padding: 10px;
+        background-color: #a60071;
+        text-align: center;
+      }
+      .left{
+        grid-area: left;
+        padding: 10px;
+        background-color: #751616;
+        text-align: center;
+        height: 125px;
+      }
+      .main{
+        grid-area: main;
+        padding: 10px;
+        background-color: #b25900;
+        text-align: center;
+        height: 80px;
+      }
+      .right{
+        grid-area: right;
+        padding: 10px;
+        background-color: #751616;
+        text-align: center;
+        height: 125px;
+      }
+      .footer{
+        grid-area: footer;
+        padding: 10px;
+        background-color: #0c4a02;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Grid</h1>
+    <h2>Grid container</h2>
+    <div class="grid-container">
+      <div class="grid-item">1</div>
+      <div class="grid-item">2</div>
+      <div class="grid-item">3</div>
+      <div class="grid-item">4</div>
+      <div class="grid-item">5</div>
+      <div class="grid-item">6</div>
+    </div>
+
+    <h2>Grid template areas</h2>
+    <div class="grid-contianer-areas">
+      <div class="header">Header</div>
+      <div class="left">Left sidebar</div>
+      <div class="main">Main content</div>
+      <div class="right">Right sidebar</div>
+      <div class="footer">Footer</div>
+    </div>
+  </body>
+</html>

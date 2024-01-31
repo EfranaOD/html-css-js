@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
+  <style>
+    .flex-container{
+      padding: 20px;
+      background-color: #124;
+      color: #0a3626;
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+    }
+    .flex-items{
+      flex: 1;
+      padding: 10px;
+      background-color: #bdfee8;
+    }
+    .flex-container:hover{
+      box-shadow: 0 0 8px 2px #444;
+    }
+    *::selection{
+      color: #ead4ff;
+      background-color: rgb(52, 7, 75);
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS flex box</h1>
+  <h2>Flex container</h2>
+  <div class="flex-container">
+    <div class="flex-items"><p><strong>Items 1</strong></p></div>
+    <div class="flex-items"><p><strong>Items 2</strong></p></div>
+    <div class="flex-items"><p><strong>Items 3</strong></p></div>
+  </div>
+  <h2>Flex items</h2>
+  <div class="flex-container">
+    <div class="flex-items"><p><strong>Items 1</strong></p></div>
+    <div class="flex-items"><p><strong>Items 2</strong></p></div>
+    <div class="flex-items"><p><strong>Items 3</strong></p> </div>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quae eligendi ipsum pariatur corrupti mollitia minima nobis eum alias amet!</p>
+</body>
+</html>
