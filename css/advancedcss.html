@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS</title>
+    <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
+    <style>
+      :root{
+        --primary-bgcolor: #143;
+        --primary-tcolor: #45b0b0;
+      }
+      .custom-properties-box{
+        width: 200px;
+        height: 200px;
+        color: var(--primary-tcolor);
+        background-color: var(--primary-bgcolor);
+        text-align: center;
+        line-height: 200px;
+      }
+      .grid-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+      }
+      .grid-item{
+        background-color: var(--primary-tcolor);
+        padding: 10px;
+        text-align: center;
+      }
+      .flex-container{
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .flex-item{
+        width: 30%;
+        background-color: #1bf;
+        padding: 10px;
+        text-align: center;
+      }
+      @media (max-width: 560px){
+        .flex-item{
+          width: 100%;
+        }
+        .grid-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Advanced CSS features</h1>
+    <h2>Custom properties(css varaibles)</h2>
+    <div class="custom-properties-box">
+      Custom property
+    </div>
+
+    <h2>CSS Grid(Responsive layout)</h2>
+    <div class="grid-container">
+      <div class="grid-item">Item 1</div>
+      <div class="grid-item">Item 2</div>
+      <div class="grid-item">Item 3</div>
+      <div class="grid-item">Item 4</div>
+      <div class="grid-item">Item 5</div>
+      <div class="grid-item">Item 6</div>
+    </div>
+
+    <h2>CSS Flexbox(Flexbox layout)</h2>
+    <div class="flex-container">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Item 2</div>
+      <div class="flex-item">Item 3</div>
+      <div class="flex-item">Item 4</div>
+    </div>
+
+    <h2>CSS Media query(Responsive dsig)</h2>
+    <p>Resize the window to see the layout change according to the size.</p>
+  </body>
+</html>
