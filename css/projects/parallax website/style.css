@@ -1,0 +1,61 @@
+html, body{
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+}
+.img1{
+  background-image: url(image1.jpg);
+  min-height: 100%;
+}
+.img2{
+  background-image: url(image2.jpg);
+  min-height: 600px;
+}
+.img3{
+  background-image: url(image3-1.jpg);
+  min-height: 600px;
+}
+.img4{
+  background-image: url(image4.jpg);
+  min-height: 600px;
+}
+.img5{
+  background-image: url(image5.png);
+  min-height: 600px;
+}
+.img1, .img2, .img3, .img4, .img5{
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.text{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000000;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.spbg{
+  font-size: 40px;
+  background-color: transparent;
+  font-weight: 600;
+  padding: 60px;
+}
+.psection{
+  padding: 5% 10%;
+  text-align: center;
+}
+.light-section {
+  background-color: #204842;
+  color: #9ffff1;
+}
+.dark-section {
+  background-color: #204842;
+  color: #9ffff1;
+}
