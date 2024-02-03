@@ -7,23 +7,23 @@ html, body{
   line-height: 1.8em;
 }
 .img1{
-  background-image: url(image1.jpg);
+  background-image: url(../../../imgvdadpdf/sal1.jpg);
   min-height: 100%;
 }
 .img2{
-  background-image: url(image2.jpg);
+  background-image: url(../../../imgvdadpdf/sabo.jpg);
   min-height: 600px;
 }
 .img3{
-  background-image: url(image3-1.jpg);
+  background-image: url(../../../imgvdadpdf/ace1.jpg);
   min-height: 600px;
 }
 .img4{
-  background-image: url(image4.jpg);
+  background-image: url(../../../imgvdadpdf/luffy.jpg);
   min-height: 600px;
 }
 .img5{
-  background-image: url(image5.png);
+  background-image: url(../../../imgvdadpdf/sal2.png);
   min-height: 600px;
 }
 .img1, .img2, .img3, .img4, .img5{
@@ -31,6 +31,7 @@ html, body{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .text{
   position: absolute;
